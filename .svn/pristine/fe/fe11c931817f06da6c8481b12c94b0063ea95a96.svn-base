@@ -1,0 +1,216 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable declaration-bang-space-before */
+/* stylelint-disable declaration-bang-space-before */
+/*** z-index ***/
+/*** global mixins ***/
+.ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.hideScrollbar {
+  overflow: -moz-scrollbars-none;
+  -ms-overflow-style: none;
+}
+.hideScrollbar::-webkit-scrollbar {
+  display: none;
+}
+.bizlogic {
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.bizlogic .header {
+  flex-shrink: 0;
+  border-radius: 4px 4px 0 0;
+  background: #fff;
+  border-bottom: 1px solid #d9d9d9;
+  box-shadow: none;
+}
+.bizlogic .formView {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #d9d9d9;
+}
+.bizlogic .formView .formLeft {
+  width: 230px;
+  flex-shrink: 0;
+  overflow: auto;
+  border-right: 1px solid #d9d9d9;
+  display: flex;
+  flex-direction: column;
+}
+.bizlogic .formView .formLeft .leftInput {
+  flex-shrink: 0;
+  line-height: 24px;
+}
+.bizlogic .formView .formLeft .sourceSelect {
+  padding: 8px;
+  border-bottom: 1px solid #d9d9d9;
+  line-height: 24px;
+}
+.bizlogic .formView .formLeft .treeSearch {
+  padding: 8px 8px 0;
+  background-color: #f7f7f7;
+}
+.bizlogic .formView .formLeft .sourceTree {
+  flex-shrink: 1;
+  padding: 0 8px 8px;
+  overflow: auto;
+  background-color: #f7f7f7;
+}
+.bizlogic .formView .formRight {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+.bizlogic .formView .formRight .declareSelect {
+  max-width: 272px;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+.bizlogic .formView .formRight .tableSelect {
+  margin-bottom: 6px;
+  padding: 0 16px;
+}
+.bizlogic .formView .formRight .formTop {
+  flex: 3;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+}
+.bizlogic .formView .formRight .formTop .noDeclaration {
+  display: none;
+}
+.bizlogic .formView .formRight .formTop .declareText {
+  margin-bottom: 16px;
+  flex: 1;
+  overflow-y: auto;
+  height: 100%;
+}
+.bizlogic .formView .formRight .formTop .declareText .declareForm {
+  height: 100%;
+  margin-bottom: 0 !important;
+}
+.bizlogic .formView .formRight .formTop .sqlText {
+  height: 100%;
+  flex: 1.5;
+}
+.bizlogic .formView .formRight .formTop .sqlText .sqlForm {
+  height: 100%;
+}
+.bizlogic .formView .formRight .formBottom {
+  flex: 3;
+  border-top: 1px solid #d9d9d9;
+  padding-left: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.bizlogic .formView .formRight .formBottomNone {
+  display: none;
+}
+.bizlogic .formView .formRight .tabCol {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.bizlogic .formView .formRight .tabCol .viewTab {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  margin-right: 16px;
+}
+.bizlogic .formView .formRight .tabCol .viewTab .viewTabPane {
+  position: absolute;
+  overflow-y: auto;
+  top: 36px;
+  height: 100%;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.bizlogic .formView .formRight .sqlAlertText {
+  margin-right: 16px;
+}
+.bizlogic .formView .formRight .sqlAlertText a {
+  top: 0 !important;
+  padding-bottom: 22px !important;
+}
+.bizlogic .formView .formRight .fromBtn {
+  margin: 10px 16px;
+  display: flex;
+  flex-direction: row;
+}
+.bizlogic .formView .formRight .fromBtn .sqlAlert {
+  flex: 1 1 auto;
+  width: 100%;
+}
+.bizlogic .formView .formRight .fromBtn .executeBtn {
+  width: 112px;
+  flex-shrink: 0;
+  float: right;
+}
+.bizlogic .footBtn {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.bizlogic .footBtn .btn {
+  flex-shrink: 0;
+  margin: 10px 16px 16px auto;
+}
+.teamTree {
+  display: flex;
+  direction: row;
+}
+.teamTree .teamTreeTitle {
+  width: 130px;
+  flex-shrink: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 25px;
+}
+.teamTree .teamInput {
+  width: 90px;
+  margin-left: 10px;
+}
+.foldIcon,
+.noFoldIcon {
+  float: right;
+  line-height: 2;
+  cursor: pointer;
+  margin-right: 35px;
+}
+.foldIcon:before,
+.noFoldIcon:before {
+  font-size: 18px !important;
+}
+.noFoldIcon {
+  text-align: right;
+  margin-right: 50px;
+  margin-top: -10px;
+}
+.declareMsg {
+  width: 213px;
+  height: 160px;
+}
+.declareMsg .textMsg {
+  font-weight: bold;
+}
+.declareMsg .exampleMsg {
+  background-color: #f7f7f7;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.questionClass {
+  margin-left: 2px;
+  cursor: pointer;
+}
+.switchHide {
+  display: none;
+}
+.switchshow {
+  display: inline-block;
+}
